@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(orange,rgb(108, 51, 31)); 
+    display: flex;
+    align-items: center;
+    
+}
+.mainbox{
+    height: 190px;
+    width: 190px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 10px 10px 0px 10px  yellow;
+    animation-name: loding;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}

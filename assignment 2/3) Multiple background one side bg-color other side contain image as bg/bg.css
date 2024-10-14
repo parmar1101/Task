@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maindiv{
+    height: 100vh;
+    width: 100%;
+    background-color:black;
+    display: flex;
+}
+
+.h2{
+    text-align: right;
+    border-right: 3px solid orangered;  
+    padding-right: 20px;
+    position: relative;
+    position: absolute;
+    left: 500px;
+    top: 100px;
+}
+
+.div-1{
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+    color: #fff;
+
+}
+.para{
+    color:rgb(164, 154, 154);
+}
+
+.para-2{
+    color:rgb(164, 154, 154);
+}
+.para-3{
+    color:rgb(164, 154, 154); 
+}
+
+.div-2{
+    height: 100vh;
+    width: 50%;
+    background-color: red;
+    background-image: url(leaves-7262727_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: orangered;
+    background-color:white;
+}
+#i-1{
+    font-size: 20px;
+    position: relative;
+    position: absolute;
+    left: 647px;
+    top: 20px;
+}
+.maindiv-1{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    gap: 35px;
+    position: relative;
+    position: absolute;
+    left: 110px;
+    top: 200PX;
+}
+
+h3{
+    color: orangered;
+}
+
+
+.maindiv-2{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    gap: 35px;
+    position: relative;
+    position: absolute;
+    left: 110px;
+    top: 300px;
+}
+
+.box-2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: orangered;
+    background-color:white;
+}
+#i-2{
+    font-size: 20px;
+    position: relative;
+    position: absolute;
+    left: 650px;
+    top: 20px;
+}
+
+.maindiv-3{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    gap: 35px;
+    position: relative;
+    position: absolute;
+    left: 110px;
+    top: 400px;
+}
+.box-3{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    color: orangered;
+    background-color: #fff;
+
+}
+
+#i-3{
+    font-size: 20px;
+    position: relative;
+    position: absolute;
+    left: 648px;
+    top: 20px;
+}
