@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #box-1{
+            height: 100vh;
+            width: 100%;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+              
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1">
+        <button onclick="get()">click</button>  
+    </div>
+    
+</body>
+
+<script>
+    var value = document.getElementById("box-1")    
+    function get(){
+        if(value.style.backgroundColor == "red")
+    {
+        value.style.backgroundColor ="aqua"
+    }
+    else{
+         value.style.backgroundColor ="red"
+    }
+
+    }
+</script>
+</html>
