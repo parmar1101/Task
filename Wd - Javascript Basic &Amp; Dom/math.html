@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            height: 350px;
+            width: 400px;
+            border: 10px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .input{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .maths{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+        }
+        .btn{
+            height: 100px;
+            width: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .btn button{
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+       <div><h3>Maths Operations</h3></div>
+       <div class="input">  
+        <div><span>Enter 1st Number: <input type="text" id="sub-1" ></span> </div>
+        <div><span>Enter 2st Number:<input type="text" id="sub-2" ></span> </div>
+       </div> 
+       <div class="maths">
+        <div class="btn">
+            <button onclick="addition_total()">+</button>
+            <button onclick="subtraction_total()">-</button>
+            <button onclick="multiplication_total()">*</button>
+            <button onclick="division_total()">/</button>
+            <button onclick="percent_total()">%</button>
+        </div>
+        <div><span>Answer is :</span>
+            <span id="sub_total"></span>
+        </div>
+       </div>
+
+    </section>
+</body>
+ <script>
+    function addition_total()
+    {
+        var data = document.getElementById("sub-1").value 
+        var data_2 = document.getElementById("sub-2").value
+
+        var total = +data + +data_2
+        document.getElementById("sub_total").innerHTML = total
+
+    }
+
+    function subtraction_total()
+    {
+        var subtrac1 = document.getElementById("sub-1").value 
+        var subtrac2 = document.getElementById("sub-2").value
+
+        var total = subtrac1 - subtrac2
+        document.getElementById("sub_total").innerHTML = total
+
+    }
+
+    function multiplication_total()
+    {
+        var multi1 = document.getElementById("sub-1").value 
+        var multi2 = document.getElementById("sub-2").value
+
+        var total = multi1 * multi2
+        document.getElementById("sub_total").innerHTML = total
+
+    }
+
+    function division_total()
+    {
+        var division1 = document.getElementById("sub-1").value 
+        var division2 = document.getElementById("sub-2").value
+
+        var total = division1 / division2
+        document.getElementById("sub_total").innerHTML = total
+
+    }
+
+    function percent_total()
+    {
+        var percent1 = document.getElementById("sub-1").value 
+        var percent2 = document.getElementById("sub-2").value
+
+        var total = +percent1 + +percent2
+        document.getElementById("sub_total").innerHTML = total
+        
+        var presentes = (total /200)*100
+        document.getElementById("sub_total").innerHTML = presentes
+        
+    }
+ </script>
+</html>

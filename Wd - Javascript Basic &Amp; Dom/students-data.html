@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" name="students" method="post" >
+    <table align="center" cellspacing="20" cellpadding="0"  border="2px">
+        <th colspan="2">Enter Marks</th>
+        <tr>
+            <td>C Language</td>
+            <td><input type="text" name="c" id="sub-1" value=""></td>
+        </tr>
+        <tr>
+            <td>C++ Language</td>
+            <td><input type="text" name="c-language" id="sub-2" value=""></td>
+        </tr>
+        <tr>
+            <td>Database</td>
+            <td><input type="text" name="databese" id="sub-3" value=""></td>
+
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td><input type="text" name="HTML" id="sub-4" value=""></td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td><input type="text" name="CSS" id="sub-5" value=""></td>
+        </tr>
+        <tr>
+            <td>php</td>
+            <td><input type="text" name="php" id="sub-6" value=""></td>
+        </tr>
+        <tr>
+            <td>Core Java</td>
+            <td><input type="text" name="Java" id="sub-7" value=""></td>
+        </tr>
+        <tr >
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total is: </span>
+                <span id="data-1"></span>
+                <span>/350</span>
+            </td>
+            <td>
+                <span>presentes is:</span>
+                <span id="data-2"></span>
+                <span> %</span>
+            </td>
+        </tr>
+        
+    </table>
+    
+</form>
+<button onclick="student()" style="position: absolute; top: 345px; left: 500px;">Result</button>
+</body>
+<script>
+    function student(){
+    var child1 = document.forms["students"]["c"].value
+
+    var cdata = document.forms["students"]["c-language"].value
+
+    var databese = document.forms["students"]["databese"].value
+
+    var htmldata = document.forms["students"]["HTML"].value
+
+    var cssdata = document.forms["students"]["CSS"].value
+
+    var phpdata = document.forms["students"]["php"].value
+
+    var javadata = document.forms["students"]["Java"].value
+
+   var sub_total = +child1 + +cdata + +databese + +htmldata + +cssdata + +phpdata + +javadata
+   document.getElementById("data-1").innerHTML = sub_total 
+
+   var presentes = (sub_total /350)*100
+   document.getElementById("data-2").innerHTML = presentes
+}
+</script>      
+</html>

@@ -1,0 +1,212 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .maindiv{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .sub-1{
+            height: 150px;
+            width: 150px;
+            background-color:#E9D461;
+        }
+        .sub-2{
+            height: 150px;
+            width: 150px;
+            background-color: #E94C3D;
+        }
+        .sub-3{
+            height: 150px;
+            width: 150px;
+            background-color:#716FD4;
+        }
+        .sub-4{
+            height: 150px;
+            width: 150px;
+            background-color: #3FC483;
+        } .sub-5{
+            height: 150px;
+            width: 150px;
+            background-color: #3497DA
+        } .sub-6{
+            height: 150px;
+            width: 150px;
+            background-color: rosybrown;
+        } .sub-7{
+            height: 150px;
+            width: 150px;
+            background-color:crimson;
+        }
+        .icon-1 i{
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .icon-2 i{
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .parent{
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .parent-2{
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="parent">
+            <div class="sub-1"></div>
+            <div class="sub-2"></div>
+            <div class="sub-3"></div>
+            <div class="sub-4"></div>
+            <div class="sub-5"></div>
+        </div>
+     <div class="parent-2">
+        <div class="icon-1"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="icon-2"><i class="fa-solid fa-angle-right"></i></div>
+     </div>
+</div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Box Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .maindiv {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .slider {
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            overflow: hidden;
+        }
+        /* .parent {
+            display: flex;
+            transition: transform 0.5s ease;
+        } */
+        .sub {
+            height: 150px;
+            width: 150px;
+            flex-shrink: 0;
+            gap: 20px;
+        }
+        .sub-1 { background-color: #E9D461; }
+        .sub-2 { background-color: #E94C3D; }
+        .sub-3 { background-color: #716FD4; }
+        .sub-4 { background-color: #3FC483; }
+        .sub-5 { background-color: #3497DA; }
+        .icon {
+            cursor: pointer;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .parent-2 {
+            height: auto;
+            /* width: 100%; */
+            display: flex;
+            gap: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv ">
+        <div class="slider" id="sliderContainer">
+                <div class="sub sub-1"></div>
+                <div class="sub sub-2"></div>
+                <div class="sub sub-3"></div>
+                <div class="sub sub-4"></div>
+                <div class="sub sub-5"></div>
+        </div>
+        <div class="parent-2">
+            <div class="icon" onclick="slideLeft()"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="icon" onclick="slideRight()"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+    </div>
+
+    <script>
+         var currentPosition = 0; 
+    var slideWidth = 170 ;
+    var maxSlides = document.querySelectorAll('.sub').length - 3; 
+
+
+    function slideLeft() {
+        if (currentPosition > 0) {
+            currentPosition--;
+            updateSliderPosition();
+        }
+    }
+
+
+    function slideRight() {
+        if (currentPosition < maxSlides) {
+            currentPosition++;
+            updateSliderPosition();
+        }
+    }
+
+    function updateSliderPosition() { 
+        
+        var container = document.getElementById('sliderContainer');
+        container.style.transform = `translateX(-${currentPosition * slideWidth}px)`;
+        container.style.transition = 'transform 0.5s ease';
+
+    }
+    </script>
+</body>
+</html>
