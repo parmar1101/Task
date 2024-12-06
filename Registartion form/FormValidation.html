@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        .container{
+            width: fit-content;
+            height: fit-content;
+            padding: 50px;
+            background-color: rgb(54, 120, 147);
+            margin: 90px auto;
+            border-radius: 15px;
+        }
+        .nest-container{
+            background-color: #ffff;
+            padding: 25px;
+            border-radius: 15px;
+        }
+        input[type="text"],input[type="email"]{
+            width: 350px;
+            height: 40px;
+            background-color: antiquewhite;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        input[type="button"]{
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: none;
+            background-color:rgb(54, 120, 147) ;
+            color: #ffff;
+            font-size: 17px;
+            margin-top: 15px;
+            cursor: pointer;
+        }   
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            padding-bottom:35px;
+        }
+        input::placeholder{
+            color:rgba(0, 0, 0, 0.707);
+            font-size: 17px;
+        }
+        .error{
+            color: red;
+        }
+        .opt{
+            height: 40px;
+            width: 350px;
+            border: none;
+            padding-left: 5px;
+            background-color: antiquewhite;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 17px;
+            color: rgba(0, 0, 0, 0.67);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nest-container">
+            <h2>Registration Form</h2>
+            <form action="" name="myform" method="post">
+                <table>
+                    <tr>
+                        <td><input type="text" name="" id="name" placeholder="Name*"><div id="nameError" class="error"></div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="" id="email" placeholder="Email*"><div id="emailError" class="error"></div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="phoneNumber" placeholder="Phone*"><div id="phoneError" class="error"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="" id="subject" class="opt">
+                                <option value="sub">Subject</option>
+                                <option value="ht">HTML</option>
+                                <option value="cs">CSS</option>
+                                <option value="js">JS</option>
+                            </select>
+                           <div id="subjectError" class="error"></div>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="" id="message" placeholder="Message*"><div id="messageError" class="error"></div></td>
+                    </tr>
+                    <tr align="center">
+                        <td><input type="button" name="" id="" value="Submit" onclick="validate()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="55-FormValidation.js"></script>
+</html>
