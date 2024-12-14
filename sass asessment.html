@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+          border: 2px solid gray;
+          height: fit-content;
+          width: fit-content;
+          margin: 0 auto;
+        }
+        .header {
+            background-color: #6495ED;
+            width: 800px;
+            height: 10vh;
+            color: #ffffff;
+            font-size: 25px;
+            display: grid;
+            align-items: center;
+            padding-left: 10px;
+        }
+        .main,.main2{
+            display:grid;
+            grid-template-columns: auto auto;
+            gap: 3px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-content {
+            background-color: #90EE90;
+            height: 200px;
+            width: 320px;
+            color: #ffffff;
+            display: grid;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .sidebar {
+            background-color:darkmagenta;
+            height: 200px;
+            width: 190px;
+            color: #ffffff;
+            display: grid;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .twin1{
+            background-color: #FFA500;
+            height: 160px;
+            width: 250px;
+            color: #ffffff;
+            display: grid;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+        .twin2{
+            background-color: #FFA500;
+            height: 160px;
+            width: 260px;
+            color: #ffffff;
+            display: grid;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .footer {
+            background-color: #007bff;
+            width: 800px;
+            height: 10vh;
+            color: #ffffff;
+            font-size: 25px;
+            display: grid;
+            align-items: center;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">.header</div>
+        <div class="main">
+            <div class="main-content">.main-content</div>
+            <div class="sidebar">.sidebar</div>
+        </div>
+        <div class="main2">
+        <div class="twin1">twin</div>
+        <div class="twin2">twin</div>
+        </div>
+        <div class="footer">.footer</div>
+    </div>
+</body>
+</html>
