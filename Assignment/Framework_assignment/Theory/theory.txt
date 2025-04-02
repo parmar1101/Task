@@ -1,0 +1,46 @@
+                                           Bootstrap(FrameWork)
+
+
+Q-1: What is Bootstrap, and why is it useful for website design?
+Ans: Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.
+
+As a framework, Bootstrap includes the basics for responsive web development, so developers only need to insert the code into a pre-defined grid system. The Bootstrap framework is built on Hypertext Markup Language (HTML), cascading style sheets (CSS) and JavaScript. Web developers using Bootstrap can build websites much faster without spending time worrying about basic commands and functions.
+
+
+Q-2:Explain the Bootstrap grid system and how it helps create responsive layouts?
+Ans:The Bootstrap grid system is a flexible layout system that uses a series of rows and columns to arrange content on a web page.
+It is based on a 12-column layout that adapts to different screen sizes using predefined classes.
+This grid system ensures that your design is responsive, meaning it automatically adjusts for various devices, including mobile phones, tablets, and desktops.
+ responsive layout :
+
+Device Adaptability :  By using breakpoint-specific classes (.col-sm-6, .col-md-4, etc.), you can define different layouts for various screen sizes.
+Customizable Widths : Each column can take up a specific fraction of the row, like half (col-6) or one-third (col-4), ensuring precise control over the layout.
+Consistent Structure : Provides a standard structure, making layouts easier to plan and maintain.
+Alignment and Spacing : Includes utilities like .align-items-centre and .justify-content-between for positioning and spacing.
+
+Q-3:List and explain at least three Bootstrap components (e.g., navbar, cards,  buttons)?
+Ans:
+1. Navbar
+
+The navbar is a responsive, highly customizable navigation bar used to create menus, headers, and links for website navigation.
+Features:
+Collapsible and Responsive:Automatically adjusts for smaller screens with a toggleable menu.
+Supports Branding:Add logos, brand names, and custom content.
+Customizable:Includes classes for alignment, colouring, and styling.
+
+2. Cards
+The card component is used to display content in a structured and visually appealing manner. It is ideal for presenting information like blog posts, product details, or profiles.
+Features:
+Customizable Layouts:Includes options for headers, footers, images, and actions (buttons, links).
+Flexible Sizing:Easily adjust width and height to fit different designs.
+Interactive Options:Combine with other components (like buttons or modals).
+
+3. Buttons
+Buttons in Bootstrap are styled clickable elements used for forms, modals, and navigation.
+Features:
+Pre-defined Styles:Comes with multiple classes like btn-primary, btn-secondary, and btn-success.
+Sizes and Shapes:Options for small (btn-sm), large (btn-lg), or block-level buttons (btn-block).
+Interactive States:Classes like disabled, active, and hover effects for user interaction
+
+
+
